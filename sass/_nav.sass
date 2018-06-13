@@ -1,0 +1,82 @@
+//_nav.sass
+
+html, body 
+    margin: 0
+    padding: 0
+
+
+ul, li 
+    box-sizing: border-box
+    list-style-type: none
+    margin: 0
+    padding: 0
+    
+
+
+nav 
+    > ul 
+        @include clearfix
+        background: $black
+    
+    > ul > li 
+        font-size: 1.15em
+        &:last-child a  
+    
+    > ul.closed > li
+        display: inline-block
+        @include format(small)
+            display: none
+            
+    a 
+        font-family: 'Oswald'
+        font-size: 1.5em
+        box-sizing: border-box
+        background: $black
+        text-decoration: none
+        display: block
+        padding: 6px 20px
+        text-align: center
+        @include format(medium)
+            padding: 6px 10px
+        @include format(small)
+            margin: 4px auto
+           
+        
+        &:hover 
+            background: $navdkorange
+            color: $navltorange
+            text-decoration: none
+
+nav
+    width: 100%
+    background-color: $black
+    margin: 1em auto
+    
+ul
+    margin: auto
+    width: 50%
+    
+a.about
+    color: $navGreen
+                
+a.gallery
+    color: $navRed
+                
+a.schedule
+    color: $navPurple
+            
+a.contact
+    color: $navYellow
+                
+a.links
+    color: $navBrown
+    
+#mobileMenu
+    display: block
+    @include format(medium-up)
+        display: none
+    
+// .mobile-only
+//     @include format(small)
+//         display: block
+        

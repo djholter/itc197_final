@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Deb LeAir Installations</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<section class="art">
+    <article class="galleft"> 
+        <a href="x" class="chip"><img src="images/vessels/xboat.jpg"></a>
+        <a href="x" class="chip"><img src="images/vessels/xcoveredjar.jpg"></a>
+        <a href="x" class="chip"><img src="images/vessels/xdaffadilbowl.jpg"></a>
+        <a href="x" class="chip"><img src="images/vessels/xfeather.jpg"></a>
+        <a href="x" class="chip"><img src="images/vessels/xland.jpg"></a>
+        <a href="x" class="chip"><img src="images/vessels/xLayeredLeaves.jpg"></a>
+        <a href="x" class="chip"><img src="images/vessels/xlotusbowl.jpg"></a>
+        <a href="x" class="chip"><img src="images/vessels/xnorthern.jpg"></a>
+        <a href="x" class="chip"><img src="images/vessels/xFlight.jpg"></a>
+        <a href="x" class="chip"><img src="images/vessels/xGraphic Play.jpg"></a>
+        <a href="x" class="chip"><img src="images/vessels/xNewDesign Vase.jpg"></a>
+        
+    </article>
+    <article class="galright">
+        <h1 class="galhead">Vessels</h1>
+    <nav id="sheets">
+        <ul class="closed">
+            <li class="menu">
+                About
+            </li>
+            <li class="menu">
+                Gallery
+            </li>
+            <li class="menu">
+                Schedule
+            </li>
+            <li class="menu">
+                Contacts
+            </li>
+            <li class="menu">
+                Links
+            </li>
+        </ul>
+    </nav>
+    </article>
+
+</section>
+<script>
+    /* global $ $$ */
+$(document).ready(function() {
+    let menu = $('nav > ul'),
+        menuLink = $('#mobile-menu a');
+        
+    menuLink.on('click', function() {
+        if (menu.hasClass('closed')) {
+            menu.removeClass('closed');
+            menu.addClass('open');
+        } else {
+            menu.removeClass('open');
+            menu.addClass('closed');
+        }
+    });
+    
+    let subMenu = $('.submenu'),
+    subMenuLink = $('.submenu-link');
+    
+    subMenuLink.on('click', function() {
+        $(this).parent().find('.submenu').toggle();
+    })
+});
+</script>
+<script type="text/javascript">
+    var JS_PAGE = 'detail_view';
+</script>
+<script type="text/javascript" src="js/build/app.js"></script>
+
+</body>
+</html>

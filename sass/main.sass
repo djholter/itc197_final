@@ -1,0 +1,253 @@
+@import "colors"
+@import "grid"
+@import "utils"
+@import  url('https://fonts.googleapis.com/css?family=Oswald:600')
+@import "bootstrap"
+@import "type"
+@import "nav"
+
+* 
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    
+body
+    background-color: $black
+    
+#bannerContainer
+    width: 100%
+    @include clearfix
+    
+img.medium-upBanner
+    @include format(small)
+        display: none
+    @include format(medium-up)
+        margin: auto
+        width: 100%
+        height: auto
+        display: block
+        
+        
+img.smallBanner
+    @include format(medium-up)
+        display: none
+    @include format(small)
+        margin: auto
+        width: 100%
+        height: auto
+        display: block
+        
+
+header
+    @include format(large)
+        margin: auto
+        max-width: 1920px
+        width: 100%
+    @include format(medium)
+        margin: auto
+        max-width: 1200px
+        width: 100%
+    @include format(small)
+        margin: auto
+        max-width: 800px
+        width: 100%
+    
+//Start of Carving Process page
+section#process
+    max-width: 800px
+    margin: 50px auto
+
+    p.carved_text   
+        font: $font-carv
+        font-size: 1.2em
+        color: $orange
+        //@include format (small)
+        
+    h2.carve
+        font: $font-carv
+        color: $orange
+        font-weight: bold
+        margin: 20px 0 4px 0
+            
+    img.carved
+        max-width: 100%
+        height: auto
+        
+        a
+            text-decoration: none
+            font: $font-carv
+            font-size: 1.2em
+            color: $orange
+    
+    
+//start of home page example
+section.artist
+    width: 80%
+    margin: 0 auto
+
+article.introduction
+    margin: 0 auto
+    padding-bottom: 60px
+    
+h1.intro
+    font: $font-Oswald
+    font-size: 1.5em
+    color: $blue
+    float: left
+    margin: 10px 0px
+    display: block
+    @include format(small)
+        margin: 5px 0px
+        
+p.story
+    font: $font-dimensions
+    font-size: 1.2em
+    line-height: 1.7em
+    margin: 2px auto
+    color: $blue
+    max-width: 70%
+    display: inline-block
+    float: left
+    @include format(small)
+        display: block
+        font-size: 1em
+        line-height: 1.2em
+        
+img.story
+    float: right
+    max-width: 100%
+    margin-left: 1.4em
+    margin-top: 2em
+    display: inline-block
+    @include format(small)
+        display: block
+        margin: 10px auto
+        @include clearfix
+        
+article#spacer
+    margin: 20px auto
+    @include format(small)
+        display: none
+        
+article.gallfour
+    margin: 50px auto
+    padding: 20px 0
+    
+div.g_one
+    float: left
+    margin-right: 50px
+    margin-top: 20px
+    max-width: 100%
+    @include format(small)
+        display: block
+        margin: 20px auto
+        max-width: 70%
+
+img.foursome
+    float: left
+    max-width: 100%
+    height: auto
+    display: block
+    @include format(small)
+        margin: 0 auto
+        max-width: 70%
+        display: block
+
+h2.foursome
+    @include clearfix
+    font: $font-Oswald
+    font-size: 1.7em
+    margin: 15px auto
+    display: block
+    color: $blue
+    @include format(small)
+        font-size: 1.5em
+        margin: 5px auto
+        display: block
+        
+        
+    
+    
+    
+    
+    
+//Start of Art page
+section.art
+    margin: 40px auto
+    background-color: $black
+    max-width: 60em
+    
+    
+    article.arthead
+        display: inline-block
+        @include format(small)
+            margin: 0 auto
+            @include clearfix
+        
+    
+    img.art
+        float: left
+        display: inline-block
+        max-width: 100%
+        height: auto
+        @include format(small)
+            @include clearfix
+            max-width: 80%
+            height: auto
+            display: block
+            margin: auto
+        
+    article.artbody
+        float: left
+        display: block
+        max-width: 30em
+        margin-right: 2em
+        @include format(small)
+            @include clearfix
+            margin: auto
+            margin-left: 1em
+    
+    h1.title
+        font: $font-Oswald
+        color: $blue
+        margin: 10px auto 2px auto
+        display: block
+        
+    p.dimension
+        font: $font-dimensions
+        font-style: italic
+        color: $blue
+        margin: 2px auto
+        padding: 0
+        margin-bottom: 0
+        
+    p.description
+        font: $font-dimensions
+        margin: 2px auto
+        color: $blue
+        
+//Start of Gallery page
+article.galleft
+    max-width: 40em
+    float: left
+    margin: 40px auto
+    display: inline-block
+    
+
+    h1.galhead
+        font: $font-Oswald
+        float: right
+        color: $blue
+        display: block
+    
+
+article.galright
+    max-width: 20em
+    float: right
+    margin-left: 3em
+    display: inline-block
+    
+    a.chip
+        float: left
+        display: inline
+        margin: 10px
