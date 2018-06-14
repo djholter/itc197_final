@@ -87,7 +87,11 @@ section.artist
 
 article.introduction
     margin: 0 auto
-    padding-bottom: 60px
+    margin-bottom: 4em
+    width: 100%
+    height: 23em
+    @include format(small)
+        height: 3em
     
 h1.intro
     font: $font-Oswald
@@ -110,7 +114,6 @@ p.story
     float: left
     @include format(small)
         display: block
-        font-size: 1em
         line-height: 1.2em
         
 img.story
@@ -120,22 +123,21 @@ img.story
     margin-top: 2em
     display: inline-block
     @include format(small)
+        float: left
         display: block
         margin: 10px auto
-        @include clearfix
         
-article#spacer
-    margin: 20px auto
-    @include format(small)
-        display: none
         
 article.gallfour
     margin: 50px auto
     padding: 20px 0
+    height: 10em
+    @include format(small)
+        height: 2em
     
 div.g_one
     float: left
-    margin-right: 50px
+    margin-right: 70px
     margin-top: 20px
     max-width: 100%
     @include format(small)
@@ -158,20 +160,35 @@ h2.foursome
     font: $font-Oswald
     font-size: 1.7em
     margin: 15px auto
+    max-width: 100%
     display: block
     color: $blue
     @include format(small)
         font-size: 1.5em
         margin: 5px auto
         display: block
+        height: 2em
         
-        
+footer
+    width: 20%
+    margin: 1em auto
+    height: 10em
+    display: block
+    @include format(small)
+        width: 80%
+        height: 5em
+    
+p.foot
+    margin: auto
+    margin-top: 3em
+    color: $blue
     
     
     
     
     
-//Start of Art page
+    
+//Start of Destination page
 section.art
     margin: 40px auto
     background-color: $black
@@ -192,6 +209,7 @@ section.art
         height: auto
         @include format(small)
             @include clearfix
+            float: none
             max-width: 80%
             height: auto
             display: block
@@ -205,7 +223,7 @@ section.art
         @include format(small)
             @include clearfix
             margin: auto
-            margin-left: 1em
+            margin-left: 2em
     
     h1.title
         font: $font-Oswald

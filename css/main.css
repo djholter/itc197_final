@@ -6504,7 +6504,7 @@ nav {
 
 ul {
   margin: auto;
-  width: 50%; }
+  width: 40%; }
 
 a.about {
   color: #195031; }
@@ -6609,7 +6609,12 @@ section.artist {
 
 article.introduction {
   margin: 0 auto;
-  padding-bottom: 60px; }
+  margin-bottom: 4em;
+  width: 100%;
+  height: 23em; }
+  @media screen and (max-width: 39.99em) {
+    article.introduction {
+      height: 3em; } }
 
 h1.intro {
   font: url("https://fonts.googleapis.com/css?family=Oswald:600");
@@ -6634,7 +6639,6 @@ p.story {
   @media screen and (max-width: 39.99em) {
     p.story {
       display: block;
-      font-size: 1em;
       line-height: 1.2em; } }
 
 img.story {
@@ -6645,26 +6649,21 @@ img.story {
   display: inline-block; }
   @media screen and (max-width: 39.99em) {
     img.story {
+      float: left;
       display: block;
-      margin: 10px auto; }
-      img.story::after {
-        display: block;
-        clear: both;
-        content: ""; } }
-
-article#spacer {
-  margin: 20px auto; }
-  @media screen and (max-width: 39.99em) {
-    article#spacer {
-      display: none; } }
+      margin: 10px auto; } }
 
 article.gallfour {
   margin: 50px auto;
-  padding: 20px 0; }
+  padding: 20px 0;
+  height: 10em; }
+  @media screen and (max-width: 39.99em) {
+    article.gallfour {
+      height: 2em; } }
 
 div.g_one {
   float: left;
-  margin-right: 50px;
+  margin-right: 70px;
   margin-top: 20px;
   max-width: 100%; }
   @media screen and (max-width: 39.99em) {
@@ -6688,6 +6687,7 @@ h2.foursome {
   font: url("https://fonts.googleapis.com/css?family=Oswald:600");
   font-size: 1.7em;
   margin: 15px auto;
+  max-width: 100%;
   display: block;
   color: #666699; }
   h2.foursome::after {
@@ -6698,7 +6698,23 @@ h2.foursome {
     h2.foursome {
       font-size: 1.5em;
       margin: 5px auto;
-      display: block; } }
+      display: block;
+      height: 2em; } }
+
+footer {
+  width: 20%;
+  margin: 1em auto;
+  height: 10em;
+  display: block; }
+  @media screen and (max-width: 39.99em) {
+    footer {
+      width: 80%;
+      height: 5em; } }
+
+p.foot {
+  margin: auto;
+  margin-top: 3em;
+  color: #666699; }
 
 section.art {
   margin: 40px auto;
@@ -6720,6 +6736,7 @@ section.art {
     height: auto; }
     @media screen and (max-width: 39.99em) {
       section.art img.art {
+        float: none;
         max-width: 80%;
         height: auto;
         display: block;
@@ -6736,7 +6753,7 @@ section.art {
     @media screen and (max-width: 39.99em) {
       section.art article.artbody {
         margin: auto;
-        margin-left: 1em; }
+        margin-left: 2em; }
         section.art article.artbody::after {
           display: block;
           clear: both;
